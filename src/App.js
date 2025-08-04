@@ -11,6 +11,14 @@ import ConditionalAndEvents from './learning/ConditionalAndEvents';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
+  // Handle GitHub Pages routing
+  React.useEffect(() => {
+    const path = window.location.pathname;
+    if (path === '/REACT--LEARNING-/' || path === '/REACT--LEARNING-') {
+      setCurrentPage('home');
+    }
+  }, []);
+
   const renderPage = () => {
     switch(currentPage) {
       case 'learning':
