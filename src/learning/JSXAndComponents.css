@@ -1,0 +1,383 @@
+/* JSX and Components Learning Page Styles */
+.jsx-components-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jsx-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.jsx-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.jsx-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Navigation Buttons */
+.jsx-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.nav-btn.active {
+  background: white;
+  color: #667eea;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Main Content Area */
+.jsx-main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+.content-section {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.content-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.content-section h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+/* Explanation Boxes */
+.explanation-box {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border-left: 5px solid #667eea;
+}
+
+.explanation-box p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.explanation-box ul {
+  margin-left: 1.5rem;
+}
+
+.explanation-box li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.explanation-box h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Code Boxes - Dark theme like VS Code */
+.code-box {
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border: 1px solid #333;
+}
+
+.code-box h4 {
+  background: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #444;
+}
+
+.code-content {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1.5rem;
+  margin: 0;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Code Comparison Layout */
+.code-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Explanation Lists */
+.explanation-list {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.explanation-item {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 5px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.explanation-item strong {
+  color: #667eea;
+}
+
+/* JSX Points Layout */
+.jsx-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.point-box {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.point-box h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.point-box p {
+  margin-top: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* JSX Rules Grid */
+.jsx-rules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.rule-box {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.rule-box h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.rule-box p {
+  margin-top: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Syntax Grid for JSX Syntax section */
+.syntax-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.syntax-box {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.syntax-box h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Mini code boxes for smaller examples */
+.code-box.mini {
+  margin: 0.5rem 0;
+}
+
+.code-box.mini .code-content {
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* Scrollbar Styling for Code Blocks */
+.code-content::-webkit-scrollbar {
+  height: 8px;
+}
+
+.code-content::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.code-content::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.code-content::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Animation for content transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jsx-header h1 {
+    font-size: 2rem;
+  }
+  
+  .jsx-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    width: 200px;
+  }
+  
+  .jsx-main-content {
+    padding: 0 1rem 3rem;
+  }
+  
+  .content-section {
+    padding: 1.5rem;
+  }
+  
+  .jsx-rules,
+  .jsx-points,
+  .syntax-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .code-comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .jsx-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .jsx-header p {
+    font-size: 1rem;
+  }
+  
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .content-section h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Hover effects */
+.point-box:hover,
+.rule-box:hover,
+.syntax-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.explanation-item:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Loading animation for code blocks */
+.code-box {
+  position: relative;
+}
+
+.code-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
