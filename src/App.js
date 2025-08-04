@@ -38,7 +38,7 @@ function App() {
           <div className="App">
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
-              <h1>Welcome to Your React Learning Journey!</h1>
+              <h1>Welcome to Your React Learning Journey! 🚀</h1>
               <p>
                 This is your React application. Let's start learning React together!
               </p>
