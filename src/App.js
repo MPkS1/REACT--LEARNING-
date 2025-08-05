@@ -14,7 +14,8 @@ function App() {
   // Handle GitHub Pages routing
   React.useEffect(() => {
     const path = window.location.pathname;
-    if (path === '/REACT--LEARNING-/' || path === '/REACT--LEARNING-') {
+    const hash = window.location.hash;
+    if (path.includes('/REACT--LEARNING-') || hash) {
       setCurrentPage('home');
     }
   }, []);
