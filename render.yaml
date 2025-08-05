@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: react-learning-app
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run serve
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
